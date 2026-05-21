@@ -1,5 +1,6 @@
 export const profile = {
   name: 'Rishi Jain',
+  photo: '/rishi-jain.jpg',
   credentials: 'CISSP',
   title: 'Senior Information Security Analyst',
   company: 'Druva',

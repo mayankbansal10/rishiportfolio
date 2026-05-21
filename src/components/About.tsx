@@ -26,13 +26,33 @@ export function About() {
         </div>
 
         <div className="grid md:grid-cols-5 gap-12 items-start">
-          <div className="md:col-span-3 space-y-6 text-slate-400 text-lg leading-relaxed">
-            {profile.summary.split('\n\n').map((paragraph) => (
-              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-            ))}
+          <div className="md:col-span-3 space-y-8">
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <img
+                src={profile.photo}
+                alt={profile.name}
+                className="w-28 h-28 rounded-2xl object-cover object-top border border-white/10 shrink-0 md:hidden"
+                width={112}
+                height={112}
+              />
+              <div className="space-y-6 text-slate-400 text-lg leading-relaxed flex-1">
+                {profile.summary.split('\n\n').map((paragraph) => (
+                  <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="md:col-span-2 space-y-4">
+            <div className="hidden md:block rounded-2xl border border-white/10 overflow-hidden mb-2">
+              <img
+                src={profile.photo}
+                alt={`${profile.name} — ${profile.title}`}
+                className="w-full aspect-[4/5] object-cover object-top"
+                width={400}
+                height={500}
+              />
+            </div>
             <div className="rounded-2xl border border-white/8 bg-navy-900/80 p-6">
               <h3 className="text-white font-medium mb-4">Languages</h3>
               <div className="flex flex-wrap gap-2">
