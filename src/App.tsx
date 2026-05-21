@@ -1,4 +1,5 @@
 import { About } from './components/About'
+import { CompanyLogos } from './components/CompanyLogos'
 import { Contact } from './components/Contact'
 import { Credentials } from './components/Credentials'
 import { Experience } from './components/Experience'
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <CompanyLogos />
         <About />
         <Expertise />
         <Experience />

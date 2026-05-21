@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 28" fill="none" role="img" aria-label="My Vehicle Tracker">
+  <rect x="0" y="2" width="24" height="24" rx="6" stroke="#fff" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+  <path d="M8 18l4-8h2l2 4h2l2-4h2l4 8" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="30" y="18" fill="#fff" font-family="system-ui, sans-serif" font-size="10" font-weight="700">My Vehicle Tracker</text>
+</svg>

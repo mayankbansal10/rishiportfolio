@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 28" fill="none" role="img" aria-label="Druva">
+  <path d="M6 4h10c5.5 0 10 4.5 10 10s-4.5 10-10 10H6V4z" fill="#fff" fill-opacity="0.9"/>
+  <path d="M11 9h5c2.8 0 5 2.2 5 5s-2.2 5-5 5h-5V9z" fill="#0a1628"/>
+  <text x="30" y="19" fill="#fff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Druva</text>
+</svg>
