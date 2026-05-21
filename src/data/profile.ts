@@ -1,6 +1,8 @@
 export const profile = {
   name: 'Rishi Jain',
   photo: '/rishi-jain.jpg',
+  ogImage: 'https://mayankbansal10.github.io/rishiportfolio/rishi-jain.jpg',
+  siteUrl: 'https://mayankbansal10.github.io/rishiportfolio/',
   credentials: 'CISSP',
   title: 'Senior Information Security Analyst',
   company: 'Druva',
