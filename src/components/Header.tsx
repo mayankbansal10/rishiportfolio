@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { profile } from '../data/profile'
+import { ResumeLink } from './ResumeLink'
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -53,6 +54,7 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <ResumeLink className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-5 py-2 text-sm font-medium text-slate-300 hover:border-teal-500/50 hover:text-teal-400 transition-all" />
           <a
             href={profile.linkedin}
             target="_blank"
@@ -93,11 +95,15 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <ResumeLink
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-5 py-3 text-slate-300 font-medium"
+            onClick={() => setMenuOpen(false)}
+          />
           <a
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 text-center rounded-full border border-teal-500/40 bg-teal-500/10 px-5 py-3 text-teal-400 font-medium"
+            className="text-center rounded-full border border-teal-500/40 bg-teal-500/10 px-5 py-3 text-teal-400 font-medium"
             onClick={() => setMenuOpen(false)}
           >
             LinkedIn

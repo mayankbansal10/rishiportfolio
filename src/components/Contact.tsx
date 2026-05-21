@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import { ResumeLink } from './ResumeLink'
 
 export function Contact() {
   return (
@@ -22,11 +23,12 @@ export function Contact() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <ResumeLink className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-teal-500 px-10 py-4 text-sm font-semibold text-navy-950 hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25" />
           <a
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto rounded-full bg-teal-500 px-10 py-4 text-sm font-semibold text-navy-950 hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25"
+            className="w-full sm:w-auto rounded-full border border-teal-500/40 bg-teal-500/10 px-10 py-4 text-sm font-semibold text-teal-400 hover:bg-teal-500/20 transition-colors"
           >
             Connect on LinkedIn
           </a>

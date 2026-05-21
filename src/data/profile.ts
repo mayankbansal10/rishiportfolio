@@ -9,6 +9,9 @@ export const profile = {
   location: 'San Francisco Bay Area',
   website: 'https://www.rishijain.info',
   linkedin: 'https://www.linkedin.com/in/rishijn1',
+  /** Set to e.g. '/Rishi-Jain-Resume.pdf' when a PDF is added to public/ */
+  resumePdf: null as string | null,
+  resumePage: '/resume.html',
   tagline:
     'Data Enthusiast · Risk Strategist · Business Transformation Professional',
   roles: [

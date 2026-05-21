@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import { ResumeLink } from './ResumeLink'
 
 export function Hero() {
   return (
@@ -46,9 +47,10 @@ export function Hero() {
             </p>
 
             <div className="animate-fade-up animate-delay-400 flex flex-wrap gap-4 justify-center lg:justify-start mb-12 lg:mb-16">
+              <ResumeLink className="inline-flex items-center gap-2 rounded-full bg-teal-500 px-8 py-3.5 text-sm font-semibold text-navy-950 hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25" />
               <a
                 href="#contact"
-                className="rounded-full bg-teal-500 px-8 py-3.5 text-sm font-semibold text-navy-950 hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25"
+                className="rounded-full border border-teal-500/40 bg-teal-500/10 px-8 py-3.5 text-sm font-semibold text-teal-400 hover:bg-teal-500/20 transition-colors"
               >
                 Get in Touch
               </a>
