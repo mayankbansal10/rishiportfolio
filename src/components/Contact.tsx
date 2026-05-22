@@ -20,8 +20,14 @@ export function Contact() {
           {profile.contactIntro}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <ResumeLink className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-teal-500 px-10 py-4 text-sm font-semibold text-navy-950 hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25" />
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+          <a
+            href={`mailto:${profile.email}`}
+            className="w-full sm:w-auto rounded-full bg-teal-500 px-10 py-4 text-sm font-semibold text-navy-950 hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25"
+          >
+            {profile.email}
+          </a>
+          <ResumeLink className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-teal-500/40 bg-teal-500/10 px-10 py-4 text-sm font-semibold text-teal-400 hover:bg-teal-500/20 transition-colors" />
           <a
             href={profile.linkedin}
             target="_blank"
@@ -43,6 +49,13 @@ export function Contact() {
         </div>
 
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-slate-500">
+          <a
+            href={`mailto:${profile.email}`}
+            className="hover:text-teal-400 transition-colors"
+          >
+            {profile.email}
+          </a>
+          <span className="hidden sm:inline text-white/20">|</span>
           <span>{profile.location}</span>
           <span className="hidden sm:inline text-white/20">|</span>
           <span>{profile.title} @ {profile.company}</span>

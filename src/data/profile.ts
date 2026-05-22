@@ -8,6 +8,7 @@ export const profile = {
   company: 'Druva',
   location: 'San Francisco Bay Area',
   website: 'https://www.rishijain.io',
+  email: 'hi@rishijain.io',
   linkedin: 'https://www.linkedin.com/in/rishijn1',
   /** Set to e.g. '/Rishi-Jain-Resume.pdf' when a PDF is added to public/ */
   resumePdf: null as string | null,

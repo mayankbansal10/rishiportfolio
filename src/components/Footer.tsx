@@ -9,7 +9,13 @@ export function Footer() {
         <p>
           © {year} {profile.name}, {profile.credentials}. All rights reserved.
         </p>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-6 justify-center sm:justify-end">
+          <a
+            href={`mailto:${profile.email}`}
+            className="hover:text-teal-400 transition-colors"
+          >
+            {profile.email}
+          </a>
           <a
             href={profile.linkedin}
             target="_blank"

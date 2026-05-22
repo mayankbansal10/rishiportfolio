@@ -76,6 +76,16 @@ export function About() {
               </p>
             </div>
 
+            <a
+              href={`mailto:${profile.email}`}
+              className="flex items-center justify-between rounded-2xl border border-teal-500/20 bg-teal-500/5 p-6 hover:border-teal-500/40 transition-colors group"
+            >
+              <span className="text-teal-400 group-hover:text-teal-300 transition-colors">
+                {profile.email}
+              </span>
+              <span className="text-slate-500 group-hover:text-teal-400">→</span>
+            </a>
+
             {profile.website && (
               <a
                 href={profile.website}
