@@ -36,7 +36,7 @@ export function Experience() {
                 <div className="rounded-2xl border border-white/8 bg-navy-900/40 p-6 md:p-8 hover:border-teal-500/20 transition-all">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                     <div className="flex gap-4 items-start">
-                      <div className="hidden sm:flex h-14 w-24 shrink-0 items-center justify-center rounded-xl border border-white/8 bg-white/[0.03] px-2">
+                      <div className="hidden sm:block shrink-0">
                         <CompanyLogo company={job.company} size="md" />
                       </div>
                       <div>

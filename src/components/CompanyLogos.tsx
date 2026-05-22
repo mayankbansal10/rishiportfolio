@@ -20,14 +20,18 @@ export function CompanyLogos() {
           {featuredCompanies.map((brand) => (
             <div
               key={brand.slug}
-              className="flex flex-col items-center justify-center gap-3 rounded-xl border border-white/8 bg-black/40 px-4 py-6 hover:border-teal-500/25 transition-colors"
+              className="flex flex-col items-center justify-center gap-3 rounded-xl border border-white/10 bg-navy-900/50 px-4 py-5 hover:border-teal-500/30 transition-colors"
             >
-              <img
-                src={brand.logo}
-                alt={`${brand.name} logo`}
-                className="h-10 md:h-12 w-full max-w-[140px] object-contain"
-              />
-              <span className="text-xs text-slate-500 text-center">{brand.name}</span>
+              <div className="flex h-16 md:h-[4.5rem] w-full items-center justify-center rounded-lg bg-white px-4 py-3 shadow-sm">
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  className="max-h-11 md:max-h-12 w-full object-contain"
+                />
+              </div>
+              <span className="text-xs text-slate-400 text-center font-medium">
+                {brand.name}
+              </span>
             </div>
           ))}
         </div>

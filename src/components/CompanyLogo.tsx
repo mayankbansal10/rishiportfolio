@@ -7,12 +7,6 @@ interface CompanyLogoProps {
   className?: string
 }
 
-const sizeClasses = {
-  sm: 'h-6 w-auto max-w-[72px]',
-  md: 'h-8 w-auto max-w-[96px]',
-  lg: 'h-10 w-auto max-w-[120px]',
-}
-
 export function CompanyLogo({
   company,
   size = 'md',
@@ -43,16 +37,26 @@ export function CompanyLogo({
     )
   }
 
+  const boxSize = {
+    sm: 'h-10 w-20',
+    md: 'h-12 w-24',
+    lg: 'h-14 w-28',
+  }
+
   return (
     <div
       className={`flex items-center gap-3 ${className}`}
       title={brand.name}
     >
-      <img
-        src={brand.logo}
-        alt={`${brand.name} logo`}
-        className={`${sizeClasses[size]} object-contain opacity-90 hover:opacity-100 transition-opacity`}
-      />
+      <div
+        className={`${boxSize[size]} flex shrink-0 items-center justify-center rounded-md bg-white px-2 py-1`}
+      >
+        <img
+          src={brand.logo}
+          alt={`${brand.name} logo`}
+          className="max-h-full max-w-full object-contain"
+        />
+      </div>
       {showName && (
         <span className="text-sm text-slate-400">{brand.name}</span>
       )}
