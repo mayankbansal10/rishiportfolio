@@ -1,5 +1,4 @@
 import { profile } from '../data/profile'
-import { CompanyLogo } from './CompanyLogo'
 
 export function Experience() {
   return (
@@ -35,11 +34,7 @@ export function Experience() {
 
                 <div className="rounded-2xl border border-white/8 bg-navy-900/40 p-6 md:p-8 hover:border-teal-500/20 transition-all">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
-                    <div className="flex gap-4 items-start">
-                      <div className="hidden sm:block shrink-0">
-                        <CompanyLogo company={job.company} size="md" />
-                      </div>
-                      <div>
+                    <div>
                       <div className="flex flex-wrap items-center gap-3 mb-1">
                         <h3 className="text-xl text-white font-medium">
                           {job.role}
@@ -50,13 +45,7 @@ export function Experience() {
                           </span>
                         )}
                       </div>
-                      <div className="flex items-center gap-3">
-                        <p className="text-teal-400 font-medium">{job.company}</p>
-                        <span className="sm:hidden">
-                          <CompanyLogo company={job.company} size="sm" />
-                        </span>
-                      </div>
-                    </div>
+                      <p className="text-teal-400 font-medium">{job.company}</p>
                     </div>
                     <div className="text-right shrink-0">
                       <p className="text-sm text-white/80">{job.period}</p>
