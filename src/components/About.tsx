@@ -84,7 +84,7 @@ export function About() {
                 className="flex items-center justify-between rounded-2xl border border-white/8 p-6 hover:border-teal-500/30 transition-colors group"
               >
                 <span className="text-white group-hover:text-teal-400 transition-colors">
-                  rishijain.info
+                  rishijain.io
                 </span>
                 <span className="text-slate-500 group-hover:text-teal-400">→</span>
               </a>

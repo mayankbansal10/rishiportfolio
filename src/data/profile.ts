@@ -1,13 +1,13 @@
 export const profile = {
   name: 'Rishi Jain',
   photo: '/rishi-jain.jpg',
-  ogImage: 'https://mayankbansal10.github.io/rishiportfolio/rishi-jain.jpg',
-  siteUrl: 'https://mayankbansal10.github.io/rishiportfolio/',
+  ogImage: 'https://www.rishijain.io/rishi-jain.jpg',
+  siteUrl: 'https://www.rishijain.io/',
   credentials: 'CISSP',
   title: 'Senior Information Security Analyst',
   company: 'Druva',
   location: 'San Francisco Bay Area',
-  website: 'https://www.rishijain.info',
+  website: 'https://www.rishijain.io',
   linkedin: 'https://www.linkedin.com/in/rishijn1',
   /** Set to e.g. '/Rishi-Jain-Resume.pdf' when a PDF is added to public/ */
   resumePdf: null as string | null,

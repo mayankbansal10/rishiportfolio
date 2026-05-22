@@ -37,7 +37,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto rounded-full border border-white/15 px-10 py-4 text-sm font-medium text-white hover:border-teal-500/50 transition-all"
             >
-              Visit rishijain.info
+              Visit rishijain.io
             </a>
           )}
         </div>
