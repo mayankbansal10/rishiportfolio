@@ -16,10 +16,8 @@ export function Contact() {
         <h2 className="font-serif text-4xl md:text-6xl text-white tracking-tight mb-6">
           Ready to strengthen your security posture?
         </h2>
-        <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-12">
-          I'm open to senior information security, GRC, technology risk, and
-          audit automation roles. Let's discuss how my experience can support
-          your team.
+        <p className="text-slate-400 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+          {profile.contactIntro}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -51,7 +51,7 @@ export function CompanyLogo({
       <img
         src={brand.logo}
         alt={`${brand.name} logo`}
-        className={`${sizeClasses[size]} object-contain opacity-90 hover:opacity-100 transition-opacity ${brand.slug === 'ey' ? '' : ''}`}
+        className={`${sizeClasses[size]} object-contain opacity-90 hover:opacity-100 transition-opacity`}
       />
       {showName && (
         <span className="text-sm text-slate-400">{brand.name}</span>

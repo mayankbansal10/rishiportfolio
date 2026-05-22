@@ -1,8 +1,6 @@
-import { companyBrands } from '../data/companies'
+import { featuredCompanies } from '../data/companies'
 
 export function CompanyLogos() {
-  const marqueeItems = [...companyBrands, ...companyBrands]
-
   return (
     <section
       aria-label="Companies and organizations"
@@ -17,44 +15,22 @@ export function CompanyLogos() {
         </h2>
       </div>
 
-      <div className="relative overflow-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-navy-950 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-navy-950 to-transparent z-10 pointer-events-none" />
-
-        <div className="flex animate-marquee gap-12 md:gap-16 w-max px-6">
-          {marqueeItems.map((brand, i) => (
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+          {featuredCompanies.map((brand) => (
             <div
-              key={`${brand.slug}-${i}`}
-              className="flex flex-col items-center justify-center gap-3 shrink-0 min-w-[140px]"
+              key={brand.slug}
+              className="flex flex-col items-center justify-center gap-3 rounded-xl border border-white/8 bg-black/40 px-4 py-6 hover:border-teal-500/25 transition-colors"
             >
-              <div className="flex h-16 w-36 items-center justify-center rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 hover:border-teal-500/25 hover:bg-white/[0.06] transition-all">
-                <img
-                  src={brand.logo}
-                  alt={`${brand.name} logo`}
-                  className="h-8 w-full max-w-[120px] object-contain opacity-85"
-                />
-              </div>
-              <span className="text-xs text-slate-500 text-center whitespace-nowrap">
-                {brand.name}
-              </span>
+              <img
+                src={brand.logo}
+                alt={`${brand.name} logo`}
+                className="h-10 md:h-12 w-full max-w-[140px] object-contain"
+              />
+              <span className="text-xs text-slate-500 text-center">{brand.name}</span>
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="mx-auto max-w-6xl px-6 mt-12 hidden md:grid grid-cols-4 lg:grid-cols-5 gap-4">
-        {companyBrands.slice(0, 5).map((brand) => (
-          <div
-            key={brand.slug}
-            className="flex items-center justify-center rounded-xl border border-white/8 bg-white/[0.02] p-4 h-20 hover:border-teal-500/20 transition-colors"
-          >
-            <img
-              src={brand.logo}
-              alt={`${brand.name} logo`}
-              className="h-7 w-full max-w-[100px] object-contain opacity-85"
-            />
-          </div>
-        ))}
       </div>
     </section>
   )

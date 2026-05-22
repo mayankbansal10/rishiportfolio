@@ -12,8 +12,14 @@ export const profile = {
   /** Set to e.g. '/Rishi-Jain-Resume.pdf' when a PDF is added to public/ */
   resumePdf: null as string | null,
   resumePage: '/resume.html',
+  openTo:
+    'Open to Cybersecurity, Trust, GRC & Analytics leadership opportunities',
+  headlineRole: 'Senior Information Security Analyst at Druva',
+  pastEmployers: 'Past - Qubole, EY, R.H.Smith - University of Maryland',
   tagline:
     'Data Enthusiast · Risk Strategist · Business Transformation Professional',
+  contactIntro:
+    "I'm open to Senior Information Security, Analytics, IT Audits & Certifications, Security Operations, Security Assurance, GRC & Trust, Third Party Risk Management, and Process Automation roles. Let's discuss how my experience can support your team.",
   roles: [
     'Techno-Managerial',
     'Security & Risk',

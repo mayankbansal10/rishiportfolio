@@ -22,7 +22,7 @@ export function Hero() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-400" />
                 </span>
-                Open to senior security & GRC opportunities
+                {profile.openTo}
               </p>
             </div>
 
@@ -33,13 +33,16 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="animate-fade-up animate-delay-200 text-xl md:text-2xl text-slate-300 max-w-3xl mb-4 font-light">
-              {profile.title} at{' '}
-              <span className="text-white font-medium">{profile.company}</span>
+            <p className="animate-fade-up animate-delay-200 text-xl md:text-2xl text-white max-w-3xl mb-3 font-medium">
+              {profile.headlineRole}
             </p>
 
-            <p className="animate-fade-up animate-delay-300 text-slate-500 mb-2">
-              {profile.location} · ex-Qubole · ex-EY · University of Maryland
+            <p className="animate-fade-up animate-delay-300 text-slate-400 mb-2">
+              {profile.location}
+            </p>
+
+            <p className="animate-fade-up animate-delay-300 text-slate-500 mb-3">
+              {profile.pastEmployers}
             </p>
 
             <p className="animate-fade-up animate-delay-300 text-lg text-teal-400/90 mb-10 max-w-2xl mx-auto lg:mx-0">
