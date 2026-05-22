@@ -10,53 +10,61 @@ export const profile = {
   website: 'https://www.rishijain.io',
   email: 'hi@rishijain.io',
   linkedin: 'https://www.linkedin.com/in/rishijn1',
-  /** Set to e.g. '/Rishi-Jain-Resume.pdf' when a PDF is added to public/ */
   resumePdf: null as string | null,
   resumePage: '/resume.html',
   openTo:
     'Open to Cybersecurity, Trust, GRC & Analytics leadership opportunities',
   headlineRole: 'Senior Information Security Analyst at Druva',
   pastEmployers: 'Past - Qubole, EY, R.H.Smith - University of Maryland',
-  tagline:
-    'Data Enthusiast · Risk Strategist · Business Transformation Professional',
+  tagline: 'Data Enthusiast · Risk Strategist · AI in Security SME',
+  aboutHeading: 'Bridging security, risk, data & AI',
+  mission:
+    'Continuously drive excellence for organization and self in challenging environments that provide growth and continuous learning.',
   contactIntro:
     "I'm open to Senior Information Security, Analytics, IT Audits & Certifications, Security Operations, Security Assurance, GRC & Trust, Third Party Risk Management, and Process Automation roles. Let's discuss how my experience can support your team.",
   roles: [
-    'Techno-Managerial',
-    'Security & Risk',
-    'Automation & Analytics',
-    'IT Audit & GRC',
+    'Information Security',
+    'Analytics',
+    'IT Audits & Certifications',
+    'Security Operations',
+    'Security Assurance',
+    'GRC & Trust',
+    'Third Party Risk Management',
+    'Process Automation',
   ],
-  summary: `I bring a rare blend of security leadership, technology risk management, and data-driven automation—shaped by roles at Druva, Qubole, Ernst & Young, and a Master's in Information Management from the University of Maryland.
+  summary: `I bring over 8 years of expertise in Information Security, AI Security, GRC, Trust, and Third-Party Risk Management (TPRM), helping organizations build scalable security programs that strengthen customer trust and accelerate business growth.
 
-Currently at Druva, I strengthen enterprise security posture while drawing on deep GRC experience: SOC 2, ISO 27001, HIPAA, GDPR, and audit automation with Python, Airflow, and cloud platforms (AWS, GCP, Azure).
+My experience includes leading AI security reviews, assessing emerging AI-driven business models, and driving enterprise security governance across SOC 2, ISO 27001, HIPAA, GDPR, cloud security, and vendor risk management. I partner closely with Sales, Legal, Product, and Engineering teams to streamline security reviews, automate trust processes, and enable faster enterprise sales cycles.
 
-My mission is continuous excellence—for organizations and myself—in challenging environments that reward growth, learning, and measurable impact.`,
+With a strong blend of strategic risk leadership and technical expertise in Python, Airflow, AWS, GCP, and Azure, I focus on modernizing security and compliance operations through automation, AI governance, and scalable security practices.
+
+I hold a Master's in Information Management from the University of Maryland and bring a CISSP-aligned approach to security, resilience, and business enablement.`,
   stats: [
-    { value: '8+', label: 'Years in Security & Risk' },
-    { value: 'CISSP', label: 'Certified Professional' },
-    { value: 'SOC2 · ISO · HIPAA', label: 'Audit Frameworks' },
+    { value: '8+', label: 'Years in Data & AI + Security & Risk' },
+    { value: 'CISSP', label: 'ISC2, Certified Member' },
+    { value: 'SOC2 · ISO-27k · HIPAA • ISO-42K (AI)', label: 'Audit Frameworks' },
     { value: '3', label: 'Research Publications' },
   ],
   skills: [
-    'IT Audit',
-    'Risk Analysis',
-    'IT Risk Management',
+    'IT Audit - Internal & External',
+    'IT Risk Analysis',
+    'Third Party Risk Management',
     'GRC & Compliance',
     'Audit Automation',
-    'Python & Big Data',
+    'AI in Security',
     'Cloud Security (AWS, GCP, Azure)',
-    'SOC 2 / ISO 27001 / HIPAA',
-    'Vendor Risk Management',
+    'SOC 2 - ISO 27001 - ISO 42001 - HIPAA',
     'SOX 404 Testing',
     'Business Continuity & DR',
-    'Data Analytics',
+    'Trust Center Management',
+    'InfoSec Policy Management',
+    'Data Analytics & AI',
   ],
   languages: ['English', 'Hindi', 'Sanskrit'],
   certifications: [
-    'CISSP (Certified Information Systems Security Professional)',
+    'ISC2 - CISSP (Certified Information Systems Security Professional)',
     'Apply Finance Concepts for Smart Project Management',
-    'Negotiation Mastery',
+    'Harvard Business School - Negotiation Mastery',
     'Apache Spark with Python — Big Data with PySpark and Spark',
     'Workshop in Probability and Statistics',
     "Learn How To Code: Google's Go (golang) Programming Language",
@@ -106,6 +114,8 @@ My mission is continuous excellence—for organizations and myself—in challeng
       period: '1999 – 2010',
     },
   ],
+  experienceIntro:
+    'From founding a PAN-India startup to leading GRC at Silicon Valley - 8 years of measurable impact.',
   experience: [
     {
       company: 'Druva',
@@ -114,9 +124,11 @@ My mission is continuous excellence—for organizations and myself—in challeng
       location: 'United States',
       duration: '2+ years',
       highlights: [
-        'Leading information security initiatives for cloud data protection platform.',
-        'Advancing enterprise GRC, risk management, and compliance programs.',
-        'Supporting audit readiness and security operations at scale.',
+        'Enabling organizations AI Products, Gap analysis for Security & Risk and ISO 42001 audit readiness.',
+        'Leading information security initiatives for cloud data protection platform and building Trust Center.',
+        'Advancing enterprise GRC, risk management, and compliance programs in AI space.',
+        'Enabling Sales RFP process with AI based response mechanisms to self-serve complex customer queries.',
+        'Security Operations for external vulnerability scans and remediation procedures leading to product improvisations.',
       ],
     },
     {
@@ -228,12 +240,12 @@ My mission is continuous excellence—for organizations and myself—in challeng
     {
       title: 'Security & GRC',
       description:
-        'End-to-end ownership of risk programs, internal/external audits, and compliance across SOC 2, ISO 27001, HIPAA, and SOX.',
+        'End-to-end ownership of risk programs, TPRM, internal/external audits, and compliance across SOC 2, ISO 27001, ISO 42001, GDPR, HIPAA, and SOX.',
     },
     {
-      title: 'Audit Automation',
+      title: 'Audit Automation & AI',
       description:
-        'Python, Airflow, and cloud-native pipelines that transform manual audit procedures into repeatable, data-driven workflows.',
+        'Python, Airflow, Tines, Zapier and cloud-native pipelines that transform manual audit procedures into repeatable, data-driven workflows. Use of AI models to simplify and re-organize manual processes for productive outputs.',
     },
     {
       title: 'Cloud & Data Platforms',

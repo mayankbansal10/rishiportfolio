@@ -25,25 +25,13 @@ export function About() {
         />
       </svg>
       <div className="relative mx-auto max-w-6xl px-6">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
-          <div>
-            <p className="text-teal-400 text-sm font-medium tracking-widest uppercase mb-3">
-              About
-            </p>
-            <h2 className="font-serif text-4xl md:text-5xl text-white tracking-tight">
-              Bridging security, risk & data
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-2 md:max-w-md">
-            {profile.roles.map((role) => (
-              <span
-                key={role}
-                className="rounded-full border border-gold-500/30 bg-gold-500/5 px-4 py-1.5 text-sm text-gold-400"
-              >
-                {role}
-              </span>
-            ))}
-          </div>
+        <div className="mb-12">
+          <p className="text-teal-400 text-sm font-medium tracking-widest uppercase mb-3">
+            About
+          </p>
+          <h2 className="font-serif text-4xl md:text-5xl text-white tracking-tight">
+            {profile.aboutHeading}
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-5 gap-12 items-start">
@@ -62,64 +50,76 @@ export function About() {
                 ))}
               </div>
             </div>
+
+            <div className="space-y-4 pt-2">
+              <div className="rounded-2xl border border-white/8 bg-navy-900/80 p-6">
+                <h3 className="text-white font-medium mb-4">Languages</h3>
+                <div className="flex flex-wrap gap-2">
+                  {profile.languages.map((lang) => (
+                    <span
+                      key={lang}
+                      className="rounded-lg bg-white/5 px-3 py-1.5 text-sm text-slate-300"
+                    >
+                      {lang}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-teal-500/20 bg-teal-500/5 p-6">
+                <h3 className="text-teal-400 font-medium mb-2">Mission</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">
+                  {profile.mission}
+                </p>
+              </div>
+
+              {profile.website && (
+                <a
+                  href={profile.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between rounded-2xl border border-white/8 p-6 hover:border-teal-500/30 transition-colors group"
+                >
+                  <span className="text-white group-hover:text-teal-400 transition-colors">
+                    rishijain.io
+                  </span>
+                  <span className="text-slate-500 group-hover:text-teal-400">→</span>
+                </a>
+              )}
+            </div>
           </div>
 
           <div className="md:col-span-2 space-y-4">
-            <div className="hidden md:block rounded-2xl border border-white/10 overflow-hidden mb-2">
+            <div className="flex flex-wrap gap-2 mb-4">
+              {profile.roles.map((role) => (
+                <span
+                  key={role}
+                  className="rounded-full border border-gold-500/30 bg-gold-500/5 px-3 py-1.5 text-xs sm:text-sm text-gold-400"
+                >
+                  {role}
+                </span>
+              ))}
+            </div>
+
+            <div className="rounded-2xl border border-white/10 overflow-hidden">
               <img
                 src={profile.photo}
                 alt={`${profile.name} — ${profile.title}`}
-                className="w-full aspect-[4/5] object-cover object-top"
+                className="w-full aspect-[4/5] object-cover object-top hidden md:block"
                 width={400}
                 height={500}
               />
             </div>
-            <div className="rounded-2xl border border-white/8 bg-navy-900/80 p-6">
-              <h3 className="text-white font-medium mb-4">Languages</h3>
-              <div className="flex flex-wrap gap-2">
-                {profile.languages.map((lang) => (
-                  <span
-                    key={lang}
-                    className="rounded-lg bg-white/5 px-3 py-1.5 text-sm text-slate-300"
-                  >
-                    {lang}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-teal-500/20 bg-teal-500/5 p-6">
-              <h3 className="text-teal-400 font-medium mb-2">Mission</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
-                Continuously drive excellence—for organization and self—in
-                challenging environments that provide growth and continuous
-                learning.
-              </p>
-            </div>
 
             <a
               href={`mailto:${profile.email}`}
-              className="flex items-center justify-between rounded-2xl border border-teal-500/20 bg-teal-500/5 p-6 hover:border-teal-500/40 transition-colors group"
+              className="hidden md:flex items-center justify-between rounded-2xl border border-teal-500/20 bg-teal-500/5 p-6 hover:border-teal-500/40 transition-colors group"
             >
-              <span className="text-teal-400 group-hover:text-teal-300 transition-colors">
+              <span className="text-teal-400 group-hover:text-teal-300 transition-colors text-sm">
                 {profile.email}
               </span>
               <span className="text-slate-500 group-hover:text-teal-400">→</span>
             </a>
-
-            {profile.website && (
-              <a
-                href={profile.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between rounded-2xl border border-white/8 p-6 hover:border-teal-500/30 transition-colors group"
-              >
-                <span className="text-white group-hover:text-teal-400 transition-colors">
-                  rishijain.io
-                </span>
-                <span className="text-slate-500 group-hover:text-teal-400">→</span>
-              </a>
-            )}
           </div>
         </div>
       </div>

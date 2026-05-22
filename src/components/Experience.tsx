@@ -14,9 +14,8 @@ export function Experience() {
         <h2 className="font-serif text-4xl md:text-5xl text-white tracking-tight mb-4">
           Professional experience
         </h2>
-        <p className="text-slate-500 mb-16 max-w-xl">
-          From founding a PAN-India startup to leading GRC at Silicon Valley
-          data platforms—eight years of measurable impact.
+        <p className="text-slate-500 mb-16">
+          {profile.experienceIntro}
         </p>
 
         <div className="relative">
