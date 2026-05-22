@@ -2,8 +2,29 @@ import { profile } from '../data/profile'
 
 export function About() {
   return (
-    <section id="about" className="py-24 md:py-32 relative">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="about" className="py-24 md:py-32 relative overflow-hidden">
+      <svg
+        className="absolute left-0 top-20 w-48 h-48 opacity-[0.07] pointer-events-none"
+        viewBox="0 0 200 200"
+        aria-hidden
+      >
+        <path
+          d="M100 20 L180 60 L180 140 L100 180 L20 140 L20 60 Z"
+          fill="none"
+          stroke="#2dd4bf"
+          strokeWidth="1"
+        />
+        <path
+          d="M100 50 L150 75 L150 125 L100 150 L50 125 L50 75 Z"
+          fill="none"
+          stroke="#d4a853"
+          strokeWidth="0.75"
+          strokeDasharray="6 8"
+          className="animate-spin-slow"
+          style={{ transformOrigin: '100px 100px' }}
+        />
+      </svg>
+      <div className="relative mx-auto max-w-6xl px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
             <p className="text-teal-400 text-sm font-medium tracking-widest uppercase mb-3">

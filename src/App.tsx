@@ -6,20 +6,30 @@ import { Expertise } from './components/Expertise'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { AmbientBackground } from './components/graphics/AmbientBackground'
+import { SectionDivider } from './components/graphics/SectionDivider'
 
 function App() {
   return (
-    <div className="min-h-screen bg-navy-950 text-slate-300 antialiased">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Expertise />
-        <Experience />
-        <Credentials />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="relative min-h-screen bg-navy-950 text-slate-300 antialiased">
+      <AmbientBackground />
+      <div className="relative z-10">
+        <Header />
+        <main>
+          <Hero />
+          <SectionDivider />
+          <About />
+          <SectionDivider variant="slant" />
+          <Expertise />
+          <SectionDivider flip />
+          <Experience />
+          <SectionDivider variant="slant" flip />
+          <Credentials />
+          <SectionDivider />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }

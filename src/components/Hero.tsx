@@ -1,9 +1,12 @@
 import { profile } from '../data/profile'
 import { ResumeLink } from './ResumeLink'
+import { HeroGraphics, PortraitRings } from './graphics/HeroGraphics'
+import { StatGraphic } from './graphics/StatGraphic'
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden grid-bg">
+      <HeroGraphics />
       <div
         className="glow-orb w-[500px] h-[500px] bg-teal-500/15 -top-32 -right-32"
         aria-hidden
@@ -74,11 +77,12 @@ export function Hero() {
             </div>
 
             <div className="animate-fade-up animate-delay-500 grid grid-cols-2 gap-4 md:gap-6">
-              {profile.stats.map((stat) => (
+              {profile.stats.map((stat, i) => (
                 <div
                   key={stat.label}
-                  className="rounded-2xl border border-white/8 bg-white/[0.03] backdrop-blur-sm p-5 md:p-6 text-center lg:text-left hover:border-teal-500/20 transition-colors"
+                  className="card-shimmer stat-card-glow relative rounded-2xl border border-white/8 bg-white/[0.03] backdrop-blur-sm p-5 md:p-6 text-center lg:text-left hover:border-teal-500/20 transition-colors overflow-hidden"
                 >
+                  <StatGraphic index={i} />
                   <div className="text-2xl md:text-3xl font-semibold text-white mb-1">
                     {stat.value}
                   </div>
@@ -92,6 +96,7 @@ export function Hero() {
 
           <div className="animate-fade-up animate-delay-200 flex justify-center lg:justify-end">
             <div className="relative group">
+              <PortraitRings />
               <div
                 className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-teal-500/40 via-teal-500/10 to-amber-500/30 blur-md opacity-70 group-hover:opacity-100 transition-opacity"
                 aria-hidden

@@ -4,6 +4,18 @@ import { ResumeLink } from './ResumeLink'
 export function Contact() {
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden">
+      <svg
+        className="absolute inset-0 w-full h-full opacity-[0.08] pointer-events-none"
+        aria-hidden
+      >
+        <defs>
+          <pattern id="contactGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0 L0 0 0 40" fill="none" stroke="#2dd4bf" strokeWidth="0.5" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#contactGrid)" />
+        <circle cx="50%" cy="50%" r="200" fill="none" stroke="#2dd4bf" strokeWidth="0.5" strokeOpacity="0.5" className="animate-ping" style={{ animationDuration: '4s' }} />
+      </svg>
       <div
         className="glow-orb w-[600px] h-[300px] bg-teal-500/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         aria-hidden

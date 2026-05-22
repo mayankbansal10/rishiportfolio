@@ -2,7 +2,11 @@ import { profile } from '../data/profile'
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 md:py-32">
+    <section id="experience" className="relative py-24 md:py-32 overflow-hidden">
+      <div
+        className="absolute left-1/2 top-0 w-px h-full bg-gradient-to-b from-teal-500/20 via-teal-500/5 to-transparent -translate-x-1/2 hidden lg:block pointer-events-none"
+        aria-hidden
+      />
       <div className="mx-auto max-w-6xl px-6">
         <p className="text-teal-400 text-sm font-medium tracking-widest uppercase mb-3">
           Career Journey
@@ -32,7 +36,7 @@ export function Experience() {
                   aria-hidden
                 />
 
-                <div className="rounded-2xl border border-white/8 bg-navy-900/40 p-6 md:p-8 hover:border-teal-500/20 transition-all">
+                <div className="card-shimmer rounded-2xl border border-white/8 bg-navy-900/40 p-6 md:p-8 hover:border-teal-500/20 transition-all">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                     <div>
                       <div className="flex flex-wrap items-center gap-3 mb-1">
