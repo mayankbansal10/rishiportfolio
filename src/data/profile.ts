@@ -8,9 +8,9 @@ export const profile = {
   company: 'Druva',
   location: 'San Francisco Bay Area',
   website: 'https://www.rishijain.io',
-  email: 'hi@rishijain.io',
+  email: 'rishijain.official@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rishijn1',
-  resumePdf: null as string | null,
+  resumePdf: '/Rishi-Jain-Resume.pdf',
   resumePage: '/resume.html',
   openTo:
     'Open to Cybersecurity, Trust, GRC & Analytics leadership opportunities',
