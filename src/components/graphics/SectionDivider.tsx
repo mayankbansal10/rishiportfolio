@@ -18,7 +18,7 @@ export function SectionDivider({ variant = 'wave', flip = false }: SectionDivide
         >
           <path
             d="M0,40 Q360,80 720,40 T1440,40 L1440,80 L0,80 Z"
-            fill="#0a1628"
+            fill="var(--divider-fill)"
             fillOpacity="0.6"
           />
           <path
@@ -50,7 +50,7 @@ export function SectionDivider({ variant = 'wave', flip = false }: SectionDivide
       >
         <path
           d="M0,24 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 L0,48 Z"
-          fill="#0a1628"
+          fill="var(--divider-fill)"
           fillOpacity="0.5"
         />
       </svg>

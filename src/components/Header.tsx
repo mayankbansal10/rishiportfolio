@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { profile } from '../data/profile'
 import { ResumeLink } from './ResumeLink'
+import { ThemeSwitcher } from './ThemeSwitcher'
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -13,7 +14,6 @@ const navLinks = [
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -53,6 +53,7 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <ThemeSwitcher />
           <ResumeLink className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-5 py-2 text-sm font-medium text-slate-300 hover:border-teal-500/50 hover:text-teal-400 transition-all" />
           <a
             href={profile.linkedin}
@@ -66,7 +67,7 @@ export function Header() {
 
         <button
           type="button"
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-2 text-white"
           aria-label="Toggle menu"
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -94,6 +95,7 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <ThemeSwitcher variant="menu" onSelect={() => setMenuOpen(false)} />
           <ResumeLink
             className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-5 py-3 text-slate-300 font-medium"
             onClick={() => setMenuOpen(false)}
